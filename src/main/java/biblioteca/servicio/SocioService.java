@@ -14,10 +14,6 @@ public class SocioService {
         if (estaVacio(dni)) {
             throw new IllegalArgumentException("El DNI es obligatorio");
         }
-        // Corrección DEF01: el DNI debe contener solo números
-        if (!dni.trim().matches("\\d+")) {
-            throw new IllegalArgumentException("El DNI debe contener solo números");
-        }
         if (estaVacio(nombre)) {
             throw new IllegalArgumentException("El nombre es obligatorio");
         }
